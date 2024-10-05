@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    background-color: salmon;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: opacity 1s, transform 1s linear;
+    animation-name: drive;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+div:hover{
+    opacity: .5;
+    transform: rotate(-180deg) translateX(30px);
+}
+
+@keyframes drive {
+    from{transform: translateX(0);}
+    to{transform: translateX(90px)}
+}
