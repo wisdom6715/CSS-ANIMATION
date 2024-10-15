@@ -18,10 +18,10 @@ div{
     animation-fill-mode: forwards;
     animation-delay: 3s;
 }
-/* div:hover{
+div:hover{
     opacity: .5;
     transform: translateX(30px);
-} */
+}
 
 @keyframes drive {
     from{transform: translateX(0);}
